@@ -1,0 +1,1 @@
+export { default as logo } from './air-bnb-logo.png'
