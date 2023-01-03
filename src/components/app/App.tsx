@@ -1,10 +1,11 @@
-import { NavBar } from "../nav/NavBar";
+import { NavBar, Hero } from "../index";
 import "./App.scss";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <Hero />
     </div>
   );
 }
