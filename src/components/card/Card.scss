@@ -1,0 +1,16 @@
+.card {
+  padding: 30px;
+  .price .range {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 13.2px;
+  }
+
+  .rating-section {
+    .rating,
+    .raters,
+    .country {
+      color: #918e9b;
+    }
+  }
+}

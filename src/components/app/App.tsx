@@ -1,4 +1,4 @@
-import { NavBar, Hero } from "../index";
+import { NavBar, Hero, Card } from "../index";
 import "./App.scss";
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Hero />
+      <Card />
     </div>
   );
 }
