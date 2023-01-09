@@ -15,7 +15,7 @@ export const Card = (props: CardProp) => {
       <img src={katie} alt="experience image" />
       <div className="rating-section">
         <img src={star} alt="star" />
-        <span className="rating">props.rating </span>
+        <span className="rating">{props.rating} </span>
         <span className="raters">({props.raters})</span>
         <span>●</span>
         <span className="country">{props.country}</span>
