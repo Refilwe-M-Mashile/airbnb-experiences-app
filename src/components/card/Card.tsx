@@ -1,28 +1,29 @@
-import { katie, star } from "../../assets";
+import { star } from "../../assets";
 import "./Card.scss";
 
 type CardProp = {
   rating: number;
-  raters: number;
+  rateCount: number;
   country: string;
-  experience: string;
-  cost: number;
+  title: string;
+  price: number;
+  img: string;
 };
 
 export const Card = (props: CardProp) => {
   return (
     <div className="card">
-      <img src={katie} alt="experience image" />
+      <img src={props.img} alt="experience image" />
       <div className="rating-section">
         <img src={star} alt="star" />
         <span className="rating">{props.rating} </span>
-        <span className="raters">({props.raters})</span>
-        <span>●</span>
+        <span className="rateCount">({props.rateCount})</span>
+        <span>•</span>
         <span className="country">{props.country}</span>
       </div>
-      <p className="experience">{props.experience}</p>
+      <p className="experience">{props.title}</p>
       <p className="price">
-        <span className="cost">From ${props.cost}</span> / person
+        <span className="cost">From ${props.price}</span> / person
       </p>
     </div>
   );
