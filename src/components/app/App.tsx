@@ -58,6 +58,7 @@ function App() {
         rating={d.stats.rating}
         country={d.location}
         price={d.price}
+        openSpots={d.openSpots}
       />
     );
   });
@@ -65,7 +66,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Hero />
-      {cards}
+      <section className="card-list">{cards}</section>
     </div>
   );
 }
